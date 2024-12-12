@@ -30,3 +30,23 @@ public class mor {
 	}
 }
 """
+class animal {
+    void sound() {
+        System.out.println("animal makes a sound");
+    }
+}
+
+class Dog extends animal {
+	 @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        animal myDog = new Dog();
+        myDog.sound(); 
+    }
+}
+"""
